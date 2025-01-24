@@ -7,10 +7,10 @@ import os
 # load_dotenv()
 
 
-# embeddings = GoogleGenerativeAIEmbeddings(
-#     model="models/embedding-001",
-#     google_api_key = "AIzaSyDiI1IfCBpE_6CPTkkguBKMT_BUxYAEusA"
-# )
+embeddings = GoogleGenerativeAIEmbeddings(
+    model="models/embedding-001",
+    google_api_key = "AIzaSyDiI1IfCBpE_6CPTkkguBKMT_BUxYAEusA"
+)
 
 from dotenv import load_dotenv
 import os
@@ -20,13 +20,13 @@ import os
 load_dotenv()
 
 # Retrieve the API key from the environment variable
-google_api_key = os.getenv("GOOGLE_API_KEY")
+# google_api_key = os.getenv("GOOGLE_API_KEY")
 
-# Use the API key in the embeddings initialization
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/embedding-001",
-    google_api_key=google_api_key
-)
+# # Use the API key in the embeddings initialization
+# embeddings = GoogleGenerativeAIEmbeddings(
+#     model="models/embedding-001",
+#     google_api_key=google_api_key
+# )
 
 def load_data_from_csv(csv_path):
   """Loads data from a CSV file into a list of dictionaries."""
