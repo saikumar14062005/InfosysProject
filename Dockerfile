@@ -1,26 +1,29 @@
-# Use a slim version of the official Python image as base
+# Use a Python base image
 FROM python:3.10-slim
 
-# Set the working directory inside the container
-WORKDIR /app
-
-# Install system-level dependencies for pyaudio and portaudio
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
+    build-essential \
+    gcc \
+    libasound2-dev \
     portaudio19-dev \
-    && apt-get clean \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy the requirements file into the container
+# Set the working directory
+WORKDIR /app
+
+# Copy requirements.txt
 COPY requirements.txt .
 
-# Install the Python dependencies
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the Streamlit app code into the container
-COPY . /app
+# Copy the application code
+COPY . .
 
-# Expose port 8501 for Streamlit
+# Expose the port Streamlit will run on
 EXPOSE 8501
 
-# Command to run the Streamlit app
+# Command to run Streamlit app
 CMD ["streamlit", "run", "app.py"]
