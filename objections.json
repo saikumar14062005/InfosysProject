@@ -1,5 +1,5 @@
 [
-    { "objection": "expensive", "solution": "What is your budget? You can try other models or check for recommendations." },
+    { "objection": "too expensive", "solution": "Ohh really ! You can try other models or check for recommendations." },
     { "objection": "not worth", "solution": "We offer a value-for-money guarantee. Would you like to know how this product compares to others?" },
     { "objection": "not working", "solution": "Let’s troubleshoot the issue or arrange a replacement for you." },
     { "objection": "bad quality", "solution": "We ensure the highest standards. Could you share specific feedback for a resolution?" },
