@@ -1,0 +1,51 @@
+id,product_uid,product_title,product_description,search_term,relevance,name,value
+1,10001,Casual White Shirt,"A comfortable white cotton shirt, perfect for casual wear.","shirts, casual, cotton",0.9,Color,White
+2,10001,Casual Blue Shirt,"A comfortable blue cotton shirt, perfect for casual wear.","shirts, casual, cotton",0.85,Color,Blue
+3,10001,Casual Black Shirt,"A comfortable black cotton shirt, perfect for casual wear.","shirts, casual, cotton",0.88,Color,Black
+4,10002,Sports Running Shoes,"Lightweight running shoes with excellent grip.","shoes, running, sports",0.92,Size,10
+5,10002,Sports Running Shoes,"Lightweight running shoes with excellent grip.","shoes, running, sports",0.87,Size,9
+6,10002,Sports Running Shoes,"Lightweight running shoes with excellent grip.","shoes, running, sports",0.9,Size,11
+7,10003,Wireless Headphones,"Noise-canceling wireless headphones with deep bass.","headphones, wireless, bluetooth",0.95,Color,Black
+8,10003,Wireless Headphones,"Noise-canceling wireless headphones with deep bass.","headphones, wireless, bluetooth",0.93,Color,White
+9,10003,Wireless Headphones,"Noise-canceling wireless headphones with deep bass.","headphones, wireless, bluetooth",0.91,Color,Blue
+10,10004,Smartphone,"Latest smartphone with advanced camera features.","smartphone, android, camera",0.98,Storage,128GB
+11,10004,Smartphone,"Latest smartphone with advanced camera features.","smartphone, android, camera",0.96,Storage,256GB
+12,10004,Smartphone,"Latest smartphone with advanced camera features.","smartphone, android, camera",0.94,Storage,512GB
+13,10005,Digital Camera,"High-resolution digital camera for professional photography.","camera, digital, photography",0.9,Megapixels,24MP
+14,10005,Digital Camera,"High-resolution digital camera for professional photography.","camera, digital, photography",0.92,Megapixels,36MP
+15,10005,Digital Camera,"High-resolution digital camera for professional photography.","camera, digital, photography",0.89,Megapixels,48MP
+16,10006,Leather Wallet,"Stylish leather wallet with multiple compartments.","wallet, leather, accessories",0.87,Color,Brown
+17,10006,Leather Wallet,"Stylish leather wallet with multiple compartments.","wallet, leather, accessories",0.85,Color,Black
+18,10006,Leather Wallet,"Stylish leather wallet with multiple compartments.","wallet, leather, accessories",0.88,Color,Tan
+19,10007,Laptop,"High-performance laptop with a sleek design.","laptop, gaming, ultrabook",0.94,RAM,8GB
+20,10007,Laptop,"High-performance laptop with a sleek design.","laptop, gaming, ultrabook",0.97,RAM,16GB
+21,10007,Laptop,"High-performance laptop with a sleek design.","laptop, gaming, ultrabook",0.95,RAM,32GB
+22,10008,Backpack,"Durable backpack with multiple compartments.","backpack, travel, waterproof",0.89,Capacity,20L
+23,10008,Backpack,"Durable backpack with multiple compartments.","backpack, travel, waterproof",0.88,Capacity,30L
+24,10008,Backpack,"Durable backpack with multiple compartments.","backpack, travel, waterproof",0.9,Capacity,40L
+25,10009,Wrist Watch,"Classic wrist watch with a stainless steel body.","watch, analog, stainless",0.92,Color,Silver
+26,10009,Wrist Watch,"Classic wrist watch with a stainless steel body.","watch, analog, stainless",0.91,Color,Gold
+27,10009,Wrist Watch,"Classic wrist watch with a stainless steel body.","watch, analog, stainless",0.93,Color,Black
+28,10010,Gaming Console,"Next-gen gaming console with high performance.","gaming, console, entertainment",0.95,Storage,512GB
+29,10010,Gaming Console,"Next-gen gaming console with high performance.","gaming, console, entertainment",0.97,Storage,1TB
+30,10010,Gaming Console,"Next-gen gaming console with high performance.","gaming, console, entertainment",0.96,Storage,2TB
+31,10011,Sunglasses,"Polarized sunglasses with UV protection.","sunglasses, polarized, uv",0.9,Color,Black
+32,10011,Sunglasses,"Polarized sunglasses with UV protection.","sunglasses, polarized, uv",0.88,Color,Brown
+33,10011,Sunglasses,"Polarized sunglasses with UV protection.","sunglasses, polarized, uv",0.91,Color,Blue
+34,10012,Fitness Tracker,"Wearable fitness tracker with heart rate monitoring.","fitness, tracker, wearable",0.89,Color,Black
+35,10012,Fitness Tracker,"Wearable fitness tracker with heart rate monitoring.","fitness, tracker, wearable",0.87,Color,Pink
+36,10012,Fitness Tracker,"Wearable fitness tracker with heart rate monitoring.","fitness, tracker, wearable",0.9,Color,Blue
+37,10013,Smart TV,"4K Smart TV with HDR and streaming apps.","tv, smart, 4k",0.97,Screen Size,55inch
+38,10013,Smart TV,"4K Smart TV with HDR and streaming apps.","tv, smart, 4k",0.95,Screen Size,65inch
+39,10013,Smart TV,"4K Smart TV with HDR and streaming apps.","tv, smart, 4k",0.94,Screen Size,75inch
+40,10014,Microwave Oven,"Compact microwave oven with smart cooking modes.","microwave, kitchen, appliances",0.88,Capacity,20L
+41,10014,Microwave Oven,"Compact microwave oven with smart cooking modes.","microwave, kitchen, appliances",0.9,Capacity,30L
+42,10014,Microwave Oven,"Compact microwave oven with smart cooking modes.","microwave, kitchen, appliances",0.87,Capacity,40L
+43,10015,Blender,"Powerful blender for smoothies and shakes.","blender, kitchen, appliance",0.91,Speed,3
+44,10015,Blender,"Powerful blender for smoothies and shakes.","blender, kitchen, appliance",0.92,Speed,5
+45,10015,Blender,"Powerful blender for smoothies and shakes.","blender, kitchen, appliance",0.89,Speed,7
+46,10016,Coffee Maker,"Automatic coffee maker with multiple brew settings.","coffee, maker, automatic",0.94,Capacity,1L
+47,10016,Coffee Maker,"Automatic coffee maker with multiple brew settings.","coffee, maker, automatic",0.95,Capacity,1.5L
+48,10016,Coffee Maker,"Automatic coffee maker with multiple brew settings.","coffee, maker, automatic",0.93,Capacity,2L
+49,10017,Electric Kettle,"Fast boiling electric kettle with auto shut-off.","kettle, electric, kitchen",0.9,Capacity,1L
+50,10017,Electric Kettle,"Fast boiling electric kettle with auto shut-off.","kettle, electric, kitchen",0.91,Capacity,1.5L

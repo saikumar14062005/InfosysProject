@@ -86,12 +86,26 @@ import csv
 import os
 from langchain_community.vectorstores import FAISS
 from langchain.schema import Document
+from dotenv import load_dotenv
+import os
 
-# Initialize Google Generative AI embeddings
+# Load the .env file
+load_dotenv()
+
+# Get the API key from the environment
+google_api_key = os.getenv("GOOGLE_API_KEY")
+
+# Initialize the embeddings with the API key
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/embedding-001",
-    google_api_key="AIzaSyDiI1IfCBpE_6CPTkkguBKMT_BUxYAEusA"
+    google_api_key=google_api_key
 )
+
+# Initialize Google Generative AI embeddings
+# embeddings = GoogleGenerativeAIEmbeddings(
+#     model="models/embedding-001",
+#     google_api_key="AIzaSyDiI1IfCBpE_6CPTkkguBKMT_BUxYAEusA"
+# )
 
 def load_data_from_csv(csv_path):
     """Loads data from a CSV file into a list of dictionaries."""
@@ -128,21 +142,44 @@ def load_faiss_index(vector_store_path="faiss_index"):
     """Loads a saved FAISS index from the specified path."""
     return FAISS.load_local(vector_store_path, embeddings,allow_dangerous_deserialization=True)
 
-def search_faiss_index_with_threshold(query, vector_store, top_k=3, similarity_threshold=0.8):
+# def search_faiss_index_with_threshold(query, vector_store, top_k=3, similarity_threshold=0.8):
+#     """
+#     Searches for related data points using FAISS vector store with a similarity threshold.
+
+#     Args:
+#         query: The search query.
+#         vector_store: The FAISS vector store.
+#         top_k: Number of top results to return.
+#         similarity_threshold: Minimum similarity score to consider a match.
+
+#     Returns:
+#         A list of dictionaries containing the related data points or an empty list if no match exceeds the threshold.
+#     """
+#     # Perform similarity search with scores
+#     docs_with_scores = vector_store.similarity_search_with_score(query, k=top_k)
+
+#     # Filter results based on the similarity threshold
+#     filtered_results = [
+#         (doc, score) for doc, score in docs_with_scores if score >= similarity_threshold
+#     ]
+
+#     # Return only the documents that meet the threshold
+#     return [doc for doc, _ in filtered_results]
+
+def search_faiss_index_with_threshold(query, vector_store, similarity_threshold=0.6):
     """
     Searches for related data points using FAISS vector store with a similarity threshold.
 
     Args:
         query: The search query.
         vector_store: The FAISS vector store.
-        top_k: Number of top results to return.
         similarity_threshold: Minimum similarity score to consider a match.
 
     Returns:
         A list of dictionaries containing the related data points or an empty list if no match exceeds the threshold.
     """
-    # Perform similarity search with scores
-    docs_with_scores = vector_store.similarity_search_with_score(query, k=top_k)
+    # Perform similarity search without limiting the number of results
+    docs_with_scores = vector_store.similarity_search_with_score(query)
 
     # Filter results based on the similarity threshold
     filtered_results = [
@@ -151,6 +188,7 @@ def search_faiss_index_with_threshold(query, vector_store, top_k=3, similarity_t
 
     # Return only the documents that meet the threshold
     return [doc for doc, _ in filtered_results]
+
 
 # CSV path
 csv_path = "flipkart_products.csv"
