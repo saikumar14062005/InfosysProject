@@ -10,12 +10,12 @@ def remove_duplicate_phrases(strings):
     return unique_strings
 
 # Example usage
-input_strings = [
-    "This is the first string.",
-    "This is the second string.",
-    "This is the first string.",  # Duplicate
-    "Another unique string."
-]
+# input_strings = [
+#     "This is the first string.",
+#     "This is the second string.",
+#     "This is the first string.",  # Duplicate
+#     "Another unique string."
+# ]
 
-unique_strings = remove_duplicate_phrases(input_strings)
-print(unique_strings)
+# unique_strings = remove_duplicate_phrases(input_strings)
+# print(unique_strings)

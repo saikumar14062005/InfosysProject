@@ -167,18 +167,6 @@ def load_faiss_index(vector_store_path="faiss_index"):
 #     return [doc for doc, _ in filtered_results]
 
 def search_faiss_index_with_threshold(query, vector_store, similarity_threshold=0.6):
-    """
-    Searches for related data points using FAISS vector store with a similarity threshold.
-
-    Args:
-        query: The search query.
-        vector_store: The FAISS vector store.
-        similarity_threshold: Minimum similarity score to consider a match.
-
-    Returns:
-        A list of dictionaries containing the related data points or an empty list if no match exceeds the threshold.
-    """
-    # Perform similarity search without limiting the number of results
     docs_with_scores = vector_store.similarity_search_with_score(query)
 
     # Filter results based on the similarity threshold
