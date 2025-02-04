@@ -223,17 +223,17 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables from the .env file
-# load_dotenv()
+load_dotenv()
 
-# # Retrieve the API key from the environment
-# cohere_api_key = os.getenv("COHERE_API_KEY")
+# Retrieve the API key from the environment
+cohere_api_key = os.getenv("COHERE_API_KEY")
 
-# # Initialize the Cohere client
-# co = cohere.Client(cohere_api_key)
+# Initialize the Cohere client
+co = cohere.Client(cohere_api_key)
 
 
 # Initialize the Cohere client
-co = cohere.Client("IT8QOLxK1JfYlN0vRwoCBmkjnvjqC0cXOOrlz7o1")
+# co = cohere.Client("IT8QOLxK1JfYlN0vRwoCBmkjnvjqC0cXOOrlz7o1")
 
 # Load the objections from JSON file
 with open("objections.json", "r") as f:
